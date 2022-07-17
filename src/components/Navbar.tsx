@@ -3,14 +3,12 @@ import { FaBars, FaHome, FaPhoneSquare, FaRegAddressBook } from "react-icons/fa"
 import { MdNightlight } from "react-icons/md";
 import React from "react";
 import Drawer from "@mui/material/Drawer";
-import Button from "@mui/material/Button";
 import List from "@mui/material/List";
 import Divider from "@mui/material/Divider";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
-import InboxIcon from "@mui/icons-material/MoveToInbox";
 import MailIcon from "@mui/icons-material/Mail";
 
 const Navbar = () => {
@@ -76,7 +74,7 @@ const Navbar = () => {
           <Toolbar className="bg-white flex justify-between">
             {(["left"] as const).map((anchor) => (
               <React.Fragment key={anchor}>
-                <IconButton onClick={toggleDrawer(anchor, true)} className="block sm:hidden"><FaBars /></IconButton>
+                <IconButton onClick={toggleDrawer(anchor, true)} className=""><FaBars /></IconButton>
                 <Drawer
                   anchor={anchor}
                   open={state[anchor]}
