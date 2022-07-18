@@ -11,7 +11,7 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import MailIcon from "@mui/icons-material/Mail";
 import pic1 from "../images/WhatsApp Image 2022-07-17 at 8.01.40 AM.jpeg";
-import logo from "../images/logo.png"
+import logo from "../images/logo.jpg"
 
 
 const Navbar = () => {
@@ -73,7 +73,7 @@ const Navbar = () => {
     <>
       <Box className="block sm:hidden">
         <AppBar>
-          <Toolbar className="bg-white flex justify-between">
+          <Toolbar className="flex justify-between bg-white">
             {(["left"] as const).map((anchor) => (
               <React.Fragment key={anchor}>
                 <IconButton onClick={toggleDrawer(anchor, true)} className=""><FaBars /></IconButton>
@@ -86,12 +86,12 @@ const Navbar = () => {
                 </Drawer>
               </React.Fragment>
             ))}
-            <Box className="text-stone-500 flex items-center">
+            <Box className="flex items-center text-stone-500">
               <img src={logo} alt="logo"  className="w-20 h-14"/>
               <IconButton>
                 <MdNightlight />
               </IconButton>
-              <img src={pic1} alt="pic1" className="h-7 w-7 rounded-full" />
+              <img src={pic1} alt="pic1" className="rounded-full h-7 w-7" />
             </Box>
           </Toolbar>
         </AppBar>

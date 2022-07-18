@@ -6,7 +6,7 @@ import Tab from "@mui/material/Tab";
 import { IoMdNotifications } from "react-icons/io";
 import { MdNightlight } from "react-icons/md"
 import pic1 from "../images/WhatsApp Image 2022-07-17 at 8.01.40 AM.jpeg";
-import logo from "../images/logo.png";
+import logo from "../images/logo.jpg";
 import {
   MemoryRouter,
   // Route,
@@ -61,7 +61,7 @@ const Navbar2 = () => {
     return (
       <Tabs
         value={currentTab}
-        textColor="secondary"
+        textColor="inherit"
         indicatorColor="secondary"
         aria-label="secondary tabs example"
       >
@@ -83,8 +83,8 @@ const Navbar2 = () => {
       <Box className="hidden sm:block">
         <AppBar>
           <Toolbar className="flex justify-between bg-white">
-            <img src={logo} alt="logo" className="h-20 w-36"/>
-            <Box className="flex">
+            <img src={logo} alt="logo" className="h-24 w-36"/>
+            <Box className="flex text-yellow-600">
               <Router>
                 <Box sx={{ width: "100%" }}>
                   <Routes>{/* <Route path="*" element={} /> */}</Routes>
@@ -97,7 +97,7 @@ const Navbar2 = () => {
               <IconButton>
                 <MdNightlight />
               </IconButton>
-              <img src={pic1} alt="pic1" className="h-10 w-10 rounded-full" />
+              <img src={pic1} alt="pic1" className="w-10 h-10 rounded-full" />
             </Box>
           </Toolbar>
         </AppBar>

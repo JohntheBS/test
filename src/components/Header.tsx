@@ -1,33 +1,33 @@
 import { Box, Grid, Typography } from "@mui/material";
 import React from "react";
 import Typed from "react-typed";
-import pic from "../images/pexels-elvis-2528118.jpg";
+import pic from "../images/profil.jpeg";
 
 const Header = () => {
   return (
-    <Box className="relative grid">
-      <Box className="absolute w-full z-0">
-        <Box className="h-[700px] w-full relative z-0">
-          <Box className="h-full w-full bg-black/40 absolute "></Box>
+    <Box className="h-[700px] grid">
+      <Box className="absolute z-0 w-full">
+        <Box className="h-[100%] relative z-0 w-full ">
+          <Box className="absolute w-full h-full bg-black/50"></Box>
           <img
             src={pic}
             alt="background"
-            className="h-[100%] w-full object-cover top-20 z-0"
+            className="h-[550px] w-full object-cover top-20 z-0"
           />
         </Box>
       </Box>
-      <Box className="flex flex-col justify-center items-end pt-36 pr-10 z-20">
+      <Box className="z-20 flex flex-col items-end justify-center h-[100%] pt-10 pr-16 md:pt-20">
         <Grid>
         </Grid>
-        <p className="text-yellow-400 text-xl md:text-8xl lg:text-9xl">
+        <p className="font-mono text-xl text-yellow-600 md:text-7xl lg:text-8xlmy-4 ">
           <Typed
-            strings={["I Am Youkep Tchinde"]}
+            strings={["I'm Youkep Tchinde"]}
             typeSpeed={120} 
             backSpeed={60}
             loop
           />
         </p>
-        <Typography variant="h4" className="text-gray-400">
+        <Typography variant="h4" className="p-1 text-stone-300">
           <Typed
             strings={["Web Development", "Web Design", "Graphic Design"]}
             typeSpeed={60}

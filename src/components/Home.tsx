@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../components/Header";
+import Contact from "./Contact";
 import Resume from "./Resume";
 const Home = () => {
   return (
@@ -8,6 +9,7 @@ const Home = () => {
       <br />
       <Header />
       <Resume />
+      <Contact />
     </div>
   );
 };
