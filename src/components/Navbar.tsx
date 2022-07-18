@@ -10,6 +10,9 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import MailIcon from "@mui/icons-material/Mail";
+import pic1 from "../images/WhatsApp Image 2022-07-17 at 8.01.40 AM.jpeg";
+import logo from "../images/logo.png"
+
 
 const Navbar = () => {
   type Anchor = 'left';
@@ -68,8 +71,7 @@ const Navbar = () => {
 
   return (
     <>
-      <Box></Box>
-      <Box>
+      <Box className="block sm:hidden">
         <AppBar>
           <Toolbar className="bg-white flex justify-between">
             {(["left"] as const).map((anchor) => (
@@ -85,10 +87,11 @@ const Navbar = () => {
               </React.Fragment>
             ))}
             <Box className="text-stone-500 flex items-center">
-              <Typography variant="h6">John The Boss</Typography>
+              <img src={logo} alt="logo"  className="w-20 h-14"/>
               <IconButton>
                 <MdNightlight />
               </IconButton>
+              <img src={pic1} alt="pic1" className="h-7 w-7 rounded-full" />
             </Box>
           </Toolbar>
         </AppBar>
