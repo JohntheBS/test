@@ -7,7 +7,7 @@ import Home from './components/Home';
 
 function App() {
   return (
-    <div className='transition-all'>
+    <div className='transition-all bg-gray-200'>
       <Navbar />
       <Navbar2 />
       <Home />

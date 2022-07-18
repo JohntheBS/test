@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../components/Header";
 import Contact from "./Contact";
+import Footer from "./Footer";
 import Resume from "./Resume";
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <Header />
       <Resume />
       <Contact />
+      <Footer />
     </div>
   );
 };
