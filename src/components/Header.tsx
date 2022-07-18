@@ -1,7 +1,6 @@
 import { Box, Grid, Typography } from "@mui/material";
 import React from "react";
 import Typed from "react-typed";
-import avatar from "../images/avatar.png";
 import pic from "../images/pexels-elvis-2528118.jpg";
 
 const Header = () => {
@@ -19,7 +18,6 @@ const Header = () => {
       </Box>
       <Box className="flex flex-col justify-center items-end pt-36 pr-10 z-20">
         <Grid>
-          {/* <img src={avatar} alt="" className="w-[150px] h-[150px] " /> */}
         </Grid>
         <p className="text-yellow-400 text-xl md:text-8xl lg:text-9xl">
           <Typed

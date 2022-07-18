@@ -1,4 +1,4 @@
-import { AppBar, Box, IconButton, Toolbar, Typography } from "@mui/material";
+import { AppBar, Box, IconButton, Toolbar} from "@mui/material";
 import { FaBars, FaHome, FaPhoneSquare, FaRegAddressBook } from "react-icons/fa";
 import { MdNightlight } from "react-icons/md";
 import React from "react";
