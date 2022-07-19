@@ -1,7 +1,7 @@
 import { Box, Grid, Typography } from "@mui/material";
 import React from "react";
 import Typed from "react-typed";
-import pic from "../images/profil.jpeg";
+import pic from "../images/profil.jpg";
 
 const Header = () => {
   return (

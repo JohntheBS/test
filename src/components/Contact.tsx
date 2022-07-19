@@ -18,7 +18,7 @@ const Contact = () => {
           </div>
         </Box>
         <Box className="grid gap-5">
-          <Box className="flex gap-5">
+          <Box className="flex justify-between gap-5">
             <TextField
               label="Name"
               variant="outlined"
